@@ -1,0 +1,8 @@
+#instruct the server how to start our application
+web:uvicorn api:storage
+web:gunicorn -u 5 -k uvicorn.workers.UvicornWorker api:storage
+# because heroku does not directly support, it requires unicorn
+
+git add *
+
+U for file means : untracke
