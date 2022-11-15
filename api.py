@@ -37,8 +37,8 @@ def names(first_name:bool=False,last_name:bool=False, full_name=False):
     return full_names
 
 
-# if __name__=='__main__':
-#     app.run()
+if __name__=='__main__':
+    storage.run()
 
 # pip install fastapi
 # pip install uvicorn
